@@ -1,0 +1,21 @@
+[Amir]projectvision
+[Amir]ContextObjects
+[Nazim]ElicitationPlan
+[Morgan]KanoModel
+[ALL]SRS
+
+| Order | Document Name        | Suggested Timeline | Depends On                         |
+| ----- | -------------------- | ------------------ | ---------------------------------- |
+| 1     | TeamFormation.docx   | Day 1              | None                               |
+| 2     | ProjectVision.docx   | Day 1–2            | TeamFormation                      |
+| 3     | ContextObjects.docx  | Day 2–3            | ProjectVision                      |
+| 4     | ElicitationPlan.docx | Day 3–4            | ContextObjects                     |
+| 5     | KanoModel.docx       | Day 4–6            | ElicitationPlan + Ongoing sessions |
+| 6     | SRS.docx             | Day 6–9            | KanoModel + All previous docs      |
+
+ISO/IEC/IEEE 29148:2018 format
+Section 1:Amir,Nazim
+Section 2:Amir
+Section 3:Amir, Nazim, Morgan
+Section 4:Amir
+Section 5:Morgan
