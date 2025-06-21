@@ -18,3 +18,69 @@ As detailed in Section 3.1 (Functions), several critical operations within the s
 
 ### Possible Root Cause:
 As stated in REQ_DC002 in Section 3.6 (Design Constraints), Table 3.73 (Design Constraints), The application shall rely on real-time campus infrastructure data (e.g., elevators, pathways), which may be constrained by sensor availability and network latency. The university's IoT infrastructure is acknowledged, but there is a lack of functional solutions to reduce human dependency.
+
+# Documentation Defects
+## Defect 1:
+### Conflict Type: Ambiguity in Requirement Statement
+
+### Original Statement:
+"Admin able to view ongoing and upcoming events, include location of the events."
+
+### Description of Conflict:
+It is in Use case REQ_UCA005
+The sentence has structural issues and unclear intent about the inclusion of location data.
+
+### Possible Root Cause:
+Poor sentence construction and inconsistent phrasing.
+
+## Defect 2:
+### Conflict Type: Ambiguity in Requirement Statement
+
+### Original Statement:
+"Admin able to modify events to events calendar."
+
+### Description of Conflict:
+It is in Use case REQ_UCA003
+The use of “to” is incorrect, and the sentence structure is unclear about intended functionality.
+
+### Possible Root Cause:
+Improper grammar and lack of formal language in requirement writing.
+
+## Defect 3:
+### Conflict Type: Ambiguity in Requirement Statement
+
+### Original Statement:
+"Familiar with campus buildings like facilities, and some event locations that relevant to their workplace."
+
+### Description of Conflict:
+It is in table 1.5 column 3 row 4
+The sentence is grammatically incorrect and uses vague terminology ("facilities"), could also be a typo and facilities is faculties.
+
+### Possible Root Cause:
+Improper grammar and lack of formal language in requirement writing.
+
+## Defect 4:
+### Conflict Type: Ambiguity in Requirement Statement
+
+### Original Statement:
+"Like students."
+
+### Description of Conflict:
+It is in table 1.5 column 3 row 5
+Entirely unclear and incomplete; lacks any actionable meaning.
+
+### Possible Root Cause:
+Placeholder or shorthand left unrefined in final documentation.
+
+## Defect 5:
+### Conflict Type: Ambiguity in Requirement Statement
+
+### Original Statement:
+"Delete and save changes buttons for desire action."
+
+### Description of Conflict:
+It is in table 3.7 column 2 row 5 line 4
+The phrase "desire action" is incorrect, and the overall sentence is unclear regarding UI functionality.
+
+### Possible Root Cause:
+Informal grammar and vague terminology in describing user interface elements.
