@@ -8,7 +8,7 @@ incorrect.](media/image1.png){width="3.96875in" height="1.15625in"}
 **Group No.: G3**
 
 | **Chang Hoe Hin** | **241UC2415N** |
-|-------------------|----------------|
+| ----------------- | -------------- |
 | **Tee Kah Le**    | **241UC2414Z** |
 | **Yee Si Shun**   | **241UC24157** |
 | **Goh Chun Yong** | **241UC24158** |
@@ -474,7 +474,7 @@ Key enhancements provided by CRN include:
 **Table 1.1: Core Functionalities**
 
 | **Feature**                                  | **Description**                                                                                                                                            |
-|----------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Mobile-Based Accessible Route Planning**   | Users can select origin, and destination points to receive optimized routes that avoid stairs, steep slopes, or inaccessible paths.                        |
 | **Real-Time Campus Condition Updates**       | CRN integrates with the Facilities Management system to receive real-time updates on construction, maintenance, and elevator outages.                      |
 | **Event-Aware Navigation**                   | Uses the university\'s Event Calendar system to detect and reroute around temporary event setups, crowds, and accessibility arrangements.                  |
@@ -511,7 +511,7 @@ with the **project scope** by:
 **Table 1.2: Goals of the System**
 
 | **Requirement ID** | **Goals**                                                                                                                   | **Author** |
-|--------------------|-----------------------------------------------------------------------------------------------------------------------------|------------|
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------- | ---------- |
 | REQ_CRN_001        | The system shall make campus navigation easy and accessible for everyone.                                                   | Chun Yong  |
 | REQ_CRN_002        | The system shall ensure all users can move around campus safely and efficiently.                                            | Chun Yong  |
 | REQ_CRN_003        | The system shall provide real-time updates on accessibility issues to help users make better navigation decisions.          | Chun Yong  |
@@ -539,7 +539,7 @@ height="6.260415573053368in"}
 **Table 1.3: Use Case Diagram of Actor (End Users)**
 
 | **Use Case ID** | **Use Case Name**                   | **Description**                                                                       | **Author**    |
-|-----------------|-------------------------------------|---------------------------------------------------------------------------------------|---------------|
+| --------------- | ----------------------------------- | ------------------------------------------------------------------------------------- | ------------- |
 | REQ_UCEU001     | Set Preference                      | Tailor navigation to individual accessibility needs.                                  | CHANG HOE HIN |
 | REQ_UCEU002     | Report Obstacles                    | Notify campus authorities about accessibility issues.                                 | CHANG HOE HIN |
 | REQ_UCEU003     | Submit feedback                     | Share user experiences to enhance system functionality.                               | CHANG HOE HIN |
@@ -557,15 +557,15 @@ height="6.260415573053368in"}
 
 **Table 1.4: Use Case Diagram of Actor (Admin)**
 
-| **Use Case ID** | **Use Case Name**           | **Description**                                                                 | **Author**    |
-|-----------------|-----------------------------|---------------------------------------------------------------------------------|---------------|
-| REQ_UCA001      | Review feedback             | Administrator can access and review feedback submitted by end users.            | CHANG HOE HIN |
-| REQ_UCA002      | Validate End Users' reports | Verify the accuracy of reported obstacles                                       | CHANG HOE HIN |
-| REQ_UCA003      | Edit events                 | The administrator shall be able to update existing events in the event calendar.                                 | CHANG HOE HIN |
-| REQ_UCA004      | Add events                  | Admin able to add events to events calendar.                                    | CHANG HOE HIN |
+| **Use Case ID** | **Use Case Name**           | **Description**                                                                                                | **Author**    |
+| --------------- | --------------------------- | -------------------------------------------------------------------------------------------------------------- | ------------- |
+| REQ_UCA001      | Review feedback             | Administrator can access and review feedback submitted by end users.                                           | CHANG HOE HIN |
+| REQ_UCA002      | Validate End Users' reports | Verify the accuracy of reported obstacles                                                                      | CHANG HOE HIN |
+| REQ_UCA003      | Edit events                 | The administrator shall be able to update existing events in the event calendar.                               | CHANG HOE HIN |
+| REQ_UCA004      | Add events                  | Admin able to add events to events calendar.                                                                   | CHANG HOE HIN |
 | REQ_UCA005      | View events                 | The administrator shall be able to view all ongoing and upcoming events along with their respective locations. | CHANG HOE HIN |
-| REQ_UCA006      | Log Out                     | Allow admin to log out.                                                         | CHANG HOE HIN |
-| REQ_UCA007      | Log In                      | Allow admin to securely log in into the platform.                               | CHANG HOE HIN |
+| REQ_UCA006      | Log Out                     | Allow admin to log out.                                                                                        | CHANG HOE HIN |
+| REQ_UCA007      | Log In                      | Allow admin to securely log in into the platform.                                                              | CHANG HOE HIN |
 
 ### 1.3.3 User Characteristics {#user-characteristics .unnumbered}
 
@@ -576,17 +576,17 @@ role.
 
 **TABLE 1.5: User Characteristics**
 
-| **Role**                             | **Consideration**                 | **Expected Knowledge**                                                                                     |
-|--------------------------------------|-----------------------------------|------------------------------------------------------------------------------------------------------------|
-| Students                             | Basic Smartphone Usage            | Know how to download and basic use of mobile applications.                                                 |
-|                                      | General Digital Literacy          | Use search engine for information online and interaction with digital services.                            |
-| Faculty and Staff                    | Moderate Digital Literacy         | Able to use digital tools like email for work and communication                                            |
+| **Role**                             | **Consideration**                 | **Expected Knowledge**                                                                                         |
+| ------------------------------------ | --------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Students                             | Basic Smartphone Usage            | Know how to download and basic use of mobile applications.                                                     |
+|                                      | General Digital Literacy          | Use search engine for information online and interaction with digital services.                                |
+| Faculty and Staff                    | Moderate Digital Literacy         | Able to use digital tools like email for work and communication                                                |
 |                                      | Familiarity with Campus Resources | Familiar with campus buildings such as Faculties and relevant event locations associated with their workplace. |
-| Visitors                             | Basic Smartphone Usage            | Visitors are expected to possess basic smartphone skills similar to students                                                                                              |
-|                                      | Limited or No Campus Familiarity  | Expected no knowledge of campus layout at all.                                                             |
-| Administrators and Campus Management | High Digital Literacy             | Proficient use of various software applications.                                                           |
-|                                      | Comprehensive Campus Knowledge    | Deep understanding campus of structure                                                                     |
-|                                      | System-Specific Knowledge         | Require training to know how to interact with system interface.                                            |
+| Visitors                             | Basic Smartphone Usage            | Visitors are expected to possess basic smartphone skills similar to students                                   |
+|                                      | Limited or No Campus Familiarity  | Expected no knowledge of campus layout at all.                                                                 |
+| Administrators and Campus Management | High Digital Literacy             | Proficient use of various software applications.                                                               |
+|                                      | Comprehensive Campus Knowledge    | Deep understanding campus of structure                                                                         |
+|                                      | System-Specific Knowledge         | Require training to know how to interact with system interface.                                                |
 
 ### 1.3.4 Limitations {#limitations .unnumbered}
 
@@ -631,7 +631,7 @@ definition:
 **Table 1.6: Definition**
 
 | **Terms**                       | **Definition**                                                                                       |
-|---------------------------------|------------------------------------------------------------------------------------------------------|
+| ------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | Campus Route Navigator / CRN    | A digital platform that provides navigation system for campus and provides event info's.             |
 | End Users                       | Includes faculty, staff, visitor and student.                                                        |
 | Institutional Login Credentials | ID and password provided by university.                                                              |
@@ -1420,7 +1420,7 @@ table below will describe all the quality requirements and its details.
 **Table 3.11: Performance Requirements**
 
 | **Requirement ID** | **Description**                                                                                                                 | **Priority** | **Author**    |
-|--------------------|---------------------------------------------------------------------------------------------------------------------------------|--------------|---------------|
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------------- |
 | REQ_PR0001         | The system shall display accessible route results within 2 seconds after user input.                                            | High         | Goh Chun Yong |
 | REQ_PR0002         | Real-time updates (e.g., construction alerts, elevator outages) shall be reflected on the interface within 5 seconds of change. | High         | Goh Chun Yong |
 | REQ_PR0003         | The system shall be available 24/7, with an uptime of at least 99.5% per month.                                                 | High         | Goh Chun Yong |
@@ -1446,7 +1446,7 @@ experience for all users.
 **Table 3.12: Usability Requirement**
 
 | **Requirement ID** | **Description**                                                                                        | **Priority** | **Author**    |
-|--------------------|--------------------------------------------------------------------------------------------------------|--------------|---------------|
+| ------------------ | ------------------------------------------------------------------------------------------------------ | ------------ | ------------- |
 | REQ_UR001          | New user should be good at using the application within 10 minutes of first use.                       | High         | Chang Hoe Hin |
 | REQ_UR002          | The system shall respond to end user's input within 2 seconds.                                         | High         | Chang Hoe Hin |
 | REQ_UR003          | The system shall provide clear error message.                                                          | Medium       | Chang Hoe Hin |
@@ -1471,7 +1471,7 @@ will show back to them during interactions.
 **Table 3.13: IO01 Login Page \_ REQ_IO0101**
 
 | Requirement ID | REQ_IO0101                                    |
-|----------------|-----------------------------------------------|
+| -------------- | --------------------------------------------- |
 | Item           | Sign In Button (Input)                        |
 | Description    | A button labelled \"Sign In\"                 |
 | Purpose        | To submit user credentials for authentication |
@@ -1483,7 +1483,7 @@ will show back to them during interactions.
 **Table 3.14: IO01 Login Page \_ REQ_IO0102**
 
 | Requirement ID | REQ_IO0102                           |
-|----------------|--------------------------------------|
+| -------------- | ------------------------------------ |
 | Item           | Email Address Field (Input)          |
 | Description    | A text field to input user email     |
 | Purpose        | To enter the email address for login |
@@ -1495,7 +1495,7 @@ will show back to them during interactions.
 **Table 3.15: IO01 Login Page \_ REQ_IO0103**
 
 | Requirement ID | REQ_IO0103                       |
-|----------------|----------------------------------|
+| -------------- | -------------------------------- |
 | Item           | Password Field (Input)           |
 | Description    | A text field to input password   |
 | Purpose        | To authenticate user credentials |
@@ -1509,7 +1509,7 @@ will show back to them during interactions.
 **Table 3.16: IO02 Navigation Page \_ REQ_IO0201**
 
 | Requirement ID | REQ_IO0201                                     |
-|----------------|------------------------------------------------|
+| -------------- | ---------------------------------------------- |
 | Item           | Starting Point Input Field (Input)             |
 | Description    | A text box labelled "Enter Starting Point"     |
 | Purpose        | To allow users to input starting location      |
@@ -1521,7 +1521,7 @@ will show back to them during interactions.
 **Table 3.17: IO02 Navigation Page \_ REQ_IO0202**
 
 | Requirement ID | REQ_IO0202                                        |
-|----------------|---------------------------------------------------|
+| -------------- | ------------------------------------------------- |
 | Item           | Destination Input Field (Input)                   |
 | Description    | A text box labelled "Enter Destination"           |
 | Purpose        | To allow users to input a desired campus location |
@@ -1533,7 +1533,7 @@ will show back to them during interactions.
 **Table 3.18: IO02 Navigation Page \_ REQ_IO0203**
 
 | Requirement ID | REQ_IO0203                                     |
-|----------------|------------------------------------------------|
+| -------------- | ---------------------------------------------- |
 | Item           | Destination Search Button (Input)              |
 | Description    | A button labelled "Search Destination"         |
 | Purpose        | To submit destination & starting point         |
@@ -1545,7 +1545,7 @@ will show back to them during interactions.
 **Table 3.19: IO02 Navigation Page \_ REQ_IO0204**
 
 | Requirement ID | REQ_IO0204                                                               |
-|----------------|--------------------------------------------------------------------------|
+| -------------- | ------------------------------------------------------------------------ |
 | Item           | Navigation Map (Output)                                                  |
 | Description    | An embedded map displaying the path from current location to destination |
 | Purpose        | To visually guide the user                                               |
@@ -1559,7 +1559,7 @@ will show back to them during interactions.
 **Table 3.20: IO03 Report Obstacle Page \_ REQ_IO0301**
 
 | Requirement ID | REQ_IO0301                                                                                |
-|----------------|-------------------------------------------------------------------------------------------|
+| -------------- | ----------------------------------------------------------------------------------------- |
 | Item           | Obstacle Type Dropdown (Input)                                                            |
 | Description    | A dropdown menu listing obstacle types (e.g., construction, blocked path, slippery floor) |
 | Purpose        | To specify the type of obstacle encountered                                               |
@@ -1571,7 +1571,7 @@ will show back to them during interactions.
 **Table 3.21: IO03 Report Obstacle Page \_ REQ_IO0302**
 
 | Requirement ID | REQ_IO0302                                           |
-|----------------|------------------------------------------------------|
+| -------------- | ---------------------------------------------------- |
 | Item           | Description Field (Input)                            |
 | Description    | A text field for describing the obstacle             |
 | Purpose        | To provide additional information about the obstacle |
@@ -1583,7 +1583,7 @@ will show back to them during interactions.
 **Table 3.22: IO03 Report Obstacle Page \_ REQ_IO0303**
 
 | Requirement ID | REQ_IO0303                               |
-|----------------|------------------------------------------|
+| -------------- | ---------------------------------------- |
 | Item           | Upload Photo Button (Input)              |
 | Description    | Button to upload a photo of the obstacle |
 | Purpose        | To attach visual evidence of the issue   |
@@ -1595,7 +1595,7 @@ will show back to them during interactions.
 **Table 3.23: IO03 Report Obstacle Page \_ REQ_IO0304**
 
 | Requirement ID | REQ_IO0304                          |
-|----------------|-------------------------------------|
+| -------------- | ----------------------------------- |
 | Item           | Submit Button (Input)               |
 | Description    | A button labelled "Report Obstacle" |
 | Purpose        | To submit the obstacle report       |
@@ -1609,7 +1609,7 @@ will show back to them during interactions.
 **Table 3.24: IO04 Admin Event Dashboard Page \_ REQ_IO0401**
 
 | Requirement ID | REQ_IO0401                                            |
-|----------------|-------------------------------------------------------|
+| -------------- | ----------------------------------------------------- |
 | Item           | Event List (Output)                                   |
 | Description    | A list of events with time, location, and description |
 | Purpose        | To view all scheduled campus events                   |
@@ -1621,7 +1621,7 @@ will show back to them during interactions.
 **Table 3.25: IO04 Admin Event Dashboard Page \_ REQ_IO0402**
 
 | Requirement ID | REQ_IO0402                       |
-|----------------|----------------------------------|
+| -------------- | -------------------------------- |
 | Item           | Create Event Button (Input)      |
 | Description    | A button labelled "Create Event" |
 | Purpose        | To open the event creation form  |
@@ -1633,7 +1633,7 @@ will show back to them during interactions.
 **Table 3.25: IO04 Admin Event Dashboard Page \_ REQ_IO0403**
 
 | Requirement ID | REQ_IO0403                                    |
-|----------------|-----------------------------------------------|
+| -------------- | --------------------------------------------- |
 | Item           | Delete Event Button (Input)                   |
 | Description    | A button next to each event labelled "Delete" |
 | Purpose        | To remove an existing event                   |
@@ -1647,7 +1647,7 @@ will show back to them during interactions.
 **Table 3.26: IO05 Submit Feedback Page \_ REQ_IO0501**
 
 | Requirement ID | REQ_IO0501                                      |
-|----------------|-------------------------------------------------|
+| -------------- | ----------------------------------------------- |
 | Item           | Feedback Field (Input)                          |
 | Description    | A multiline text field labelled "Your Feedback" |
 | Purpose        | To collect feedback from users                  |
@@ -1659,7 +1659,7 @@ will show back to them during interactions.
 **Table 3.27: IO05 Submit Feedback Page \_ REQ_IO0502**
 
 | Requirement ID | REQ_IO0502                                   |
-|----------------|----------------------------------------------|
+| -------------- | -------------------------------------------- |
 | Item           | Rating Dropdown (Input)                      |
 | Description    | A dropdown to select a rating (1 to 5 stars) |
 | Purpose        | To assess user satisfaction                  |
@@ -1671,7 +1671,7 @@ will show back to them during interactions.
 **Table 3.28: IO05 Submit Feedback Page \_ REQ_IO0503**
 
 | Requirement ID | REQ_IO0503                          |
-|----------------|-------------------------------------|
+| -------------- | ----------------------------------- |
 | Item           | Submit Button (Input)               |
 | Description    | A button labelled "Submit Feedback" |
 | Purpose        | To send feedback to the system      |
@@ -1685,7 +1685,7 @@ will show back to them during interactions.
 **Table 3.29: IO06 Travel Mode Option Page \_ REQ_IO0601**
 
 | Requirement ID | REQ_IO0601                                                       |
-|----------------|------------------------------------------------------------------|
+| -------------- | ---------------------------------------------------------------- |
 | Item           | Travel Mode Toggle (Input)                                       |
 | Description    | A toggle labelled "Travel Mode"                                  |
 | Purpose        | To filter navigation to wheelchair-friendly or accessible routes |
@@ -1697,7 +1697,7 @@ will show back to them during interactions.
 **Table 3.30: IO06 Travel Mode Option Page \_ REQ_IO0602**
 
 | Requirement ID | REQ_IO0602                                        |
-|----------------|---------------------------------------------------|
+| -------------- | ------------------------------------------------- |
 | Item           | Updated Navigation Map (Output)                   |
 | Description    | Map display updates based on accessibility filter |
 | Purpose        | To show only accessible paths and entrances       |
@@ -1711,7 +1711,7 @@ will show back to them during interactions.
 **Table 3.31: IO07 Navigation Map Page \_ REQ_IO0701**
 
 | Requirement ID | REQ_IO0701                                                   |
-|----------------|--------------------------------------------------------------|
+| -------------- | ------------------------------------------------------------ |
 | Item           | Turn-by-Turn Direction Display (Output)                      |
 | Description    | Visual message showing upcoming signal (e.g., \"Turn Left\") |
 | Purpose        | To guide users through the campus with real-time navigation  |
@@ -1723,7 +1723,7 @@ will show back to them during interactions.
 **Table 3.32: IO07 Navigation Map Page \_ REQ_IO0702**
 
 | Requirement ID | REQ_IO0702                      |
-|----------------|---------------------------------|
+| -------------- | ------------------------------- |
 | Item           | Travel Mode Toggle (Input)      |
 | Description    | A toggle labelled "Travel Mode" |
 | Purpose        | To change route mode            |
@@ -1735,7 +1735,7 @@ will show back to them during interactions.
 **Table 3.33: IO07 Navigation Map Page \_ REQ_IO0703**
 
 | Requirement ID | REQ_IO0703                               |
-|----------------|------------------------------------------|
+| -------------- | ---------------------------------------- |
 | Item           | Travel Time & Distance Display (Output)  |
 | Description    | Displays estimated time and distance     |
 | Purpose        | To inform user of current route progress |
@@ -1749,7 +1749,7 @@ will show back to them during interactions.
 **Table 3.34: IO08 Navigation Map Sub Page \_ REQ_IO0801**
 
 | Requirement ID | REQ_IO0801                                       |
-|----------------|--------------------------------------------------|
+| -------------- | ------------------------------------------------ |
 | Item           | Destination Search Button (Input)                |
 | Description    | A button to guide user back to searching routes. |
 | Purpose        | To let users searching the routes                |
@@ -1761,7 +1761,7 @@ will show back to them during interactions.
 **Table 3.35: IO08 Navigation Map Sub Page \_ REQ_IO0802**
 
 | Requirement ID | REQ_IO0802                                     |
-|----------------|------------------------------------------------|
+| -------------- | ---------------------------------------------- |
 | Item           | Event Calendar Button (Output)                 |
 | Description    | A button to guide user to Event Calendar Page. |
 | Purpose        | To let users view event calendar.              |
@@ -1773,7 +1773,7 @@ will show back to them during interactions.
 **Table 3.36: IO08 Navigation Map Sub Page \_ REQ_IO0803**
 
 | Requirement ID | REQ_IO0803                                               |
-|----------------|----------------------------------------------------------|
+| -------------- | -------------------------------------------------------- |
 | Item           | Events Happening List (Output)                           |
 | Description    | List of events occurring today with time, date, location |
 | Purpose        | To help users decide what events to join on the go       |
@@ -1785,7 +1785,7 @@ will show back to them during interactions.
 **Table 3.37: IO08 Navigation Map Sub Page \_ REQ_IO0804**
 
 | Requirement ID | REQ_IO0804                       |
-|----------------|----------------------------------|
+| -------------- | -------------------------------- |
 | Item           | Stop Button (Input)              |
 | Description    | A red button labelled "Stop"     |
 | Purpose        | To stop current route navigation |
@@ -1797,7 +1797,7 @@ will show back to them during interactions.
 **Table 3.38: IO08 Navigation Map Sub Page \_ REQ_IO0805**
 
 | Requirement ID | REQ_IO0805                              |
-|----------------|-----------------------------------------|
+| -------------- | --------------------------------------- |
 | Item           | Continue Route Button (Input)           |
 | Description    | A blue button labelled "Continue Route" |
 | Purpose        | To resume paused route guidance         |
@@ -1811,7 +1811,7 @@ will show back to them during interactions.
 **Table 3.39: IO09 Event Calendar Page \_ REQ_IO0901**
 
 | Requirement ID | REQ_IO0901                                 |
-|----------------|--------------------------------------------|
+| -------------- | ------------------------------------------ |
 | Item           | Calendar Widget (Input)                    |
 | Description    | A calendar UI for selecting dates          |
 | Purpose        | To view and filter events by selected date |
@@ -1823,7 +1823,7 @@ will show back to them during interactions.
 **Table 3.40: IO09 Event Calendar Page \_ REQ_IO0902**
 
 | Requirement ID | REQ_IO0902                                             |
-|----------------|--------------------------------------------------------|
+| -------------- | ------------------------------------------------------ |
 | Item           | Event Info Card (Output)                               |
 | Description    | Card showing event name, time, place, and participants |
 | Purpose        | To view detailed event information                     |
@@ -1835,7 +1835,7 @@ will show back to them during interactions.
 **Table 3.41: IO09 Event Calendar Page \_ REQ_IO0903**
 
 | Requirement ID | REQ_IO0903                        |
-|----------------|-----------------------------------|
+| -------------- | --------------------------------- |
 | Item           | Register Button (Input)           |
 | Description    | A blue button labelled "Register" |
 | Purpose        | To register for a selected event  |
@@ -1847,7 +1847,7 @@ will show back to them during interactions.
 **Table 3.42: IO09 Event Calendar Page \_ REQ_IO0904**
 
 | Requirement ID | REQ_IO0904                                 |
-|----------------|--------------------------------------------|
+| -------------- | ------------------------------------------ |
 | Item           | Delete Button (Input)                      |
 | Description    | A red button labelled "Delete"             |
 | Purpose        | To delete the event (for authorized users) |
@@ -1861,7 +1861,7 @@ will show back to them during interactions.
 **Table 3.43: IO10 Admin Feedback Dashboard Page \_ REQ_IO1001**
 
 | Requirement ID | REQ_IO1001                                                                                       |
-|----------------|--------------------------------------------------------------------------------------------------|
+| -------------- | ------------------------------------------------------------------------------------------------ |
 | Item           | Category Filter Dropdown (Input)                                                                 |
 | Description    | A dropdown list labelled "All" with options like Obstacles Reports, Construction Reports, Others |
 | Purpose        | To filter feedback reports based on category                                                     |
@@ -1873,7 +1873,7 @@ will show back to them during interactions.
 **Table 3.44: IO10 Admin Feedback Dashboard Page \_ REQ_IO1002**
 
 | Requirement ID | REQ_IO1002                                                                                             |
-|----------------|--------------------------------------------------------------------------------------------------------|
+| -------------- | ------------------------------------------------------------------------------------------------------ |
 | Item           | Feedback Report Card (Output)                                                                          |
 | Description    | A card showing the report ID, title (e.g., Obstacles Report), content summary, username, and timestamp |
 | Purpose        | To provide admins with an overview of submitted user feedback                                          |
@@ -1885,7 +1885,7 @@ will show back to them during interactions.
 **Table 3.45: IO10 Admin Feedback Dashboard Page \_ REQ_IO1003**
 
 | Requirement ID | REQ_IO1003                                                  |
-|----------------|-------------------------------------------------------------|
+| -------------- | ----------------------------------------------------------- |
 | Item           | Message Button (Input)                                      |
 | Description    | A button labelled "Message" on each report card             |
 | Purpose        | To allow the admin to respond directly to the report sender |
@@ -1897,7 +1897,7 @@ will show back to them during interactions.
 **Table 3.46: IO10 Admin Feedback Dashboard Page \_ REQ_IO1004**
 
 | Requirement ID | REQ_IO1004                                         |
-|----------------|----------------------------------------------------|
+| -------------- | -------------------------------------------------- |
 | Item           | Print Report Button (Input)                        |
 | Description    | A red button at the bottom labelled "Print report" |
 | Purpose        | To print the current list of filtered reports      |
@@ -1917,7 +1917,7 @@ navigation, facility information, and event details.
 **Table 3.47: Interface Requirements**
 
 | **Interface ID** | **System Name**                 | **Description**                                                                                                             | **Details**                                                                                | **Author**    |
-|------------------|---------------------------------|-----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|---------------|
+| ---------------- | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | ------------- |
 | REQ_SI001        | Campus Information System (CIS) | Retrieve and synchronize data related to Facility information and Event Data.                                               | API-Driven Backend will handle data management and communication with external system      | CHANG HOE HIN |
 | REQ_SI002        | Mapping Services                | Obtain base map data and potentially utilize routing algorithms.                                                            | Data Synchronization ensure data consistency of routing algorithms                         | CHANG HOE HIN |
 | REQ_SI003        | Push notification Services      | Send alerts and notifications to users regarding event reminders, accessibility updates, or important campus announcements. | Communication between mobile application and the backend API will utilize secure protocols | CHANG HOE HIN |
@@ -1930,7 +1930,7 @@ software product and its users.
 **Table 3.48: User Interfaces**
 
 | **Module ID** | **Module Name**                  | **Description**                                                                                                                                                        | **Priority** | **Author** |
-|---------------|----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|------------|
+| ------------- | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ---------- |
 | REQ_UI001     | Navigation Interface             | Display with accessible routes highlighted, search functional for locations, turn-by-turn navigation instructions.                                                     | High         | TEE KAH LE |
 | REQ_UI002     | Facilities Information Interface | Display of facility details (e.g., building hours, accessible entrances, elevator locations, restroom accessibility), search and filtering options.                    | Medium       | TEE KAH LE |
 | REQ_UI003     | Event Information Interface      | Listing of campus events with accessibility information (e.g., wheelchair access, hearing loop availability), filtering by date, category, and accessibility features. | Medium       | TEE KAH LE |
@@ -1945,7 +1945,7 @@ so that the features work normally to user.
 **Table 3.49: Hardware Interface**
 
 | **Interface ID** | **Description**                                                                                      | **Author**    |
-|------------------|------------------------------------------------------------------------------------------------------|---------------|
+| ---------------- | ---------------------------------------------------------------------------------------------------- | ------------- |
 | REQ_HI001        | The GPS/Location should be functional from user's mobile device                                      | CHANG HOE HIN |
 | REQ_HI002        | The Random Access Memory (RAM) required for the devices shall be at least 4GB                        | CHANG HOE HIN |
 | REQ_HI003        | The mobile should have touchscreen features for user interaction with the map and interface elements | CHANG HOE HIN |
@@ -1959,7 +1959,7 @@ interfaces between CRN and other software are described below:
 **Table 3.50: Software Interfaces**
 
 | **ID**    | **Category**     | **Name** | **Version Number**   | **Purpose**                                         | **Reference**         |
-|-----------|------------------|----------|----------------------|-----------------------------------------------------|-----------------------|
+| --------- | ---------------- | -------- | -------------------- | --------------------------------------------------- | --------------------- |
 | REQ_SI001 | Operating System | Android  | Android 9.0 or later | Software platform that manages user device hardware | Google Chrome Browser |
 |           |                  | iOS      | iOS 15.0 or later    |                                                     |                       |
 
@@ -1972,7 +1972,7 @@ with other systems, networks, and services.
 **Table 3.51: Communications interface**
 
 | **Interface ID** | **Description**                                                                                          | **Protocols/Methods**          | **Priority** | **Author**  |
-|------------------|----------------------------------------------------------------------------------------------------------|--------------------------------|--------------|-------------|
+| ---------------- | -------------------------------------------------------------------------------------------------------- | ------------------------------ | ------------ | ----------- |
 | REQ_CI001        | Communication with backend server and external services.                                                 | TCP/IP, HTTP/HTTPS             | High         | YEE SI SHUN |
 | REQ_CI002        | Fetch data about facilities, events, and map information from campus systems third-party providers.      | RESTful, GraphQL               | High         | YEE SI SHUN |
 | REQ_CI003        | Structuring the data exchanged over APIs.                                                                | JSON, XML                      | Medium       | YEE SI SHUN |
@@ -1982,7 +1982,7 @@ with other systems, networks, and services.
 **Table 3.52: Interface Requirement**
 
 | **Requirement ID** | **Description**                                                                       | **Priority** | **Author** |
-|--------------------|---------------------------------------------------------------------------------------|--------------|------------|
+| ------------------ | ------------------------------------------------------------------------------------- | ------------ | ---------- |
 | REQ_IR001          | Users will be able to filter events by date and category.                             | Medium       | Tee Kah Le |
 | REQ_IR002          | The map will show elevator location and restroom accessibility.                       | Medium       | Tee Kah Le |
 | REQ_IR003          | Allows users to set their accessibility needs                                         | Medium       | Tee Kah Le |
@@ -2004,7 +2004,7 @@ height="5.9215277777777775in"}
 **Table 3.53: User**
 
 | **User**   |                                                               |                                                                                                                 |
-|------------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| ---------- | ------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
 | Content    |                                                               | Description                                                                                                     |
 | Attributes | UserID : INT                                                  | A unique number to identify the university                                                                      |
 |            | Role : string                                                 | The user\'s type (e.g., Student, Visitor, Staff, Admin).                                                        |
@@ -2020,7 +2020,7 @@ height="5.9215277777777775in"}
 **Table 3.54: EventManager**
 
 | **EventManager** |                                             |                                                                                                                                |
-|------------------|---------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| ---------------- | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | Content          |                                             | Description                                                                                                                    |
 | Attributes       | EventID: INT                                | A unique number for each event.                                                                                                |
 |                  | Title: String                               | the main name or headline of the event                                                                                         |
@@ -2043,7 +2043,7 @@ height="5.9215277777777775in"}
 **Table 3.55: FeedbackManager**
 
 | **FeedbackManager** |                                                        |                                                                                                                        |
-|---------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| ------------------- | ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------- |
 | Content             |                                                        | Description                                                                                                            |
 | Attributes          | FeedbackID: INT                                        | A unique integer identifier for each individual piece of feedback or report submitted by a user.                       |
 |                     | UserID: INT                                            | specific feedback entry to the User who submitted it.                                                                  |
@@ -2054,14 +2054,14 @@ height="5.9215277777777775in"}
 |                     | LocationID: INT (if applicable)                        | specific Location on the campus if the feedback pertains to an issue or experience at a particular place.              |
 |                     | RouteID: INT (if applicable)                           | specific Route if the feedback is related to a navigation experience on that route.                                    |
 |                     | Status: String                                         | A text string indicating the current processing state of the feedback                                                  |
-| Methods             | submitFeedback(feedback: Feedback): boolean            | Processes and stores user-submitted feedback.                                                                          |
+| Methods             | submitFeedback(feedback: Feedback): boolean            | Processes and stores user-submitted feedback.                                                                          |
 |                     | getFeedbackReports(category: String): List\<Feedback\> | Retrieves feedback reports, optionally filtered by category.                                                           |
-|                     | confirmFeedbackReport(feedbackId: INT): boolean        | Allows administrators to confirm a feedback report, potentially triggering other actions (like updating map alerts).   |
+|                     | confirmFeedbackReport(feedbackId: INT): boolean        | Allows administrators to confirm a feedback report, potentially triggering other actions (like updating map alerts).   |
 
 **Table 3.56: AuthenticationManager**
 
 | **AuthenticationManager** |                                                               |                                                                                                      |
-|---------------------------|---------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
+| ------------------------- | ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | Content                   |                                                               | Description                                                                                          |
 | Methods                   | authenticateUser(username : String, password : String) : User | Handles the process of verifying a user\'s login credentials. Returns the User object if successful. |
 |                           | registerUser(user: User): boolean                             | Manages the creation of new user accounts. Returns true if registration is successful.               |
@@ -2070,26 +2070,26 @@ height="5.9215277777777775in"}
 **Table 3.57: AlertManager**
 
 | **AlertManager** |                                                     |                                                                                                                           |
-|------------------|-----------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| ---------------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | Content          |                                                     | Description                                                                                                               |
-| Attributes       |  AlertID: INT                                       | unique integer number that serves as the primary identifier for each specific alert                                       |
+| Attributes       | AlertID: INT                                        | unique integer number that serves as the primary identifier for each specific alert                                       |
 |                  | Title: String                                       | brief headline or summary for the alert                                                                                   |
 |                  | Message: String                                     | full explanation and important information regarding the alert.                                                           |
-|                  | Severity: String                                    | level of impact or urgency of the alert                                                                                   |
+|                  | Severity: String                                    | level of impact or urgency of the alert                                                                                   |
 |                  | LocationID: INT                                     | specific Location on campus that is affected by the alert.                                                                |
 |                  | StartTime: DateTime                                 | ate and time when the alert officially became active or was issued.                                                       |
 |                  | EndTime: DateTime                                   | exact date and time when the alert is expected to be resolved or expire.                                                  |
 |                  | IsActive: Boolean                                   | whether the alert is currently active and should be displayed to users (true) or if it has expired/been resolved (false). |
 |                  | AlertType: String                                   | cause of the alert                                                                                                        |
 | Methods          | createAlert(alert: Alert): boolean                  | Allows administrators to create new alerts.                                                                               |
-|                  | updateAlert(alert: Alert): boolean                  | allows administrators to modify existing alerts.                                                                          |
+|                  | updateAlert(alert: Alert): boolean                  | allows administrators to modify existing alerts.                                                                          |
 |                  | getAlertsByLocation(locationId: INT): List\<Alert\> | Retrieves active alerts associated with a specific location.                                                              |
 |                  | getActiveAlerts(): List\<Alert\>                    | Retrieves all currently active alerts in the system.                                                                      |
 
 **Table 3.58: FacilityManager**
 
 | **FacilityManager** |                                                            |                                                                                                   |
-|---------------------|------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| ------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
 | Content             |                                                            | Description                                                                                       |
 | Attributes          | FacilityID: INT                                            | primary identifier for each specific facility on campus.                                          |
 |                     | Name: String                                               | name or label of the facility                                                                     |
@@ -2097,13 +2097,13 @@ height="5.9215277777777775in"}
 |                     | LocationID: INT                                            | specific Location on campus where it is situated.                                                 |
 |                     | Description: String                                        | additional information about the facility, such as its features, capacity, or specific amenities. |
 |                     | Status: String                                             | current operational state of the facilit                                                          |
-| Methods             | getFacilityDetails(facilityId: INT): Facility              | Retrieves detailed information for a specific facility.                                           |
+| Methods             | getFacilityDetails(facilityId: INT): Facility              | Retrieves detailed information for a specific facility.                                           |
 |                     | getFacilitiesByLocation(locationId: INT): List\<Facility\> | Finds all facilities at a given location.                                                         |
 
 **Table 3.59: LocationManager**
 
 | **LocationManager** |                                                  |                                                                                             |
-|---------------------|--------------------------------------------------|---------------------------------------------------------------------------------------------|
+| ------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------- |
 | Content             |                                                  | Description                                                                                 |
 | Attributes          | LocationID: INT                                  | primary identifier for each specific location entry in the system.                          |
 |                     | Name: String                                     | name for the location                                                                       |
@@ -2123,39 +2123,39 @@ height="5.9215277777777775in"}
 **Table 3.60: RoutePlanner**
 
 | **RoutePlanner** |                                                                                          |                                                                                           |
-|------------------|------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+| ---------------- | ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
 | Content          |                                                                                          | Description                                                                               |
 | Attributes       | RouteID: INT                                                                             | identifier for each specific calculated navigation route.                                 |
 |                  | Origin: Location                                                                         | starting point of the calculated route.                                                   |
-|                  | Destination: Location                                                                    | end point of the calculated route.                                                        |
+|                  | Destination: Location                                                                    | end point of the calculated route.                                                        |
 |                  | Distance: Double                                                                         | total length of the calculated route.                                                     |
 |                  | EstimatedTime: INT                                                                       | predicted duration required to travel the calculated route.                               |
 |                  | RouteType: String                                                                        | type of route calculated                                                                  |
 |                  | WayPoints: List\<Location\>                                                              | A list of Location objects or coordinates that define intermediate points along the route |
 |                  | Instructions: List\<String\>                                                             | step-by-step navigation instructions for the user to follow along the route               |
 | Methods          | calculateRoute(origin: Location, destination: Location, preferences: Preferences): Route | Computes a navigation route between two points, considering user preferences.             |
-|                  | getRouteInstructions(routeId: INT): List\<String\>                                       | Overloaded method to calculate a route within a specific university.                      |
-|                  | updateRouteForAlert(alert: Alert): Route                                                 | Adjusts a planned route if a new alert (e.g., an obstacle) affects it.                    |
+|                  | getRouteInstructions(routeId: INT): List\<String\>                                       | Overloaded method to calculate a route within a specific university.                      |
+|                  | updateRouteForAlert(alert: Alert): Route                                                 | Adjusts a planned route if a new alert (e.g., an obstacle) affects it.                    |
 
 **Table 3.61: NavigationController**
 
 | **NavigationController** |                                                                                          |                                                                          |
-|--------------------------|------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| ------------------------ | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
 | Content                  |                                                                                          | Description                                                              |
 | Methods                  | startNavigation(origin: Location, destination: Location, preferences: Preferences): void | Initiates the navigation process from a starting point to a destination. |
-|                          | provideNavigationInstructions(routeId: INT): void                                        | Delivers turn-by-turn or step-by-step instructions to the user.          |
-|                          |  handleAlert(alert: Alert): void                                                         | Manages how the navigation system responds to real-time alerts.          |
-|                          | endNavigation(): void                                                                    | Ends the current navigation session.                                     |
+|                          | provideNavigationInstructions(routeId: INT): void                                        | Delivers turn-by-turn or step-by-step instructions to the user.          |
+|                          | handleAlert(alert: Alert): void                                                          | Manages how the navigation system responds to real-time alerts.          |
+|                          | endNavigation(): void                                                                    | Ends the current navigation session.                                     |
 
 **Table 3.62: MapDisplay**
 
 | **MapDisplay** |                                                                                             |                                                                       |
-|----------------|---------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| -------------- | ------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | Content        |                                                                                             | Description                                                           |
 | Methods        | displayMap(locations: List\<Location\>, routes: List\<Route\>, alerts: List\<Alert\>): void | Renders the campus map, showing locations, routes, and active alerts. |
 |                | showRoute(route: Route): void                                                               | Highlights a specific route on the map.                               |
-|                | showLocationDetails(locationId: INT): void                                                  | Displays detailed information about a specific location on the map.   |
-|                | updateMapWithAlert(alert: Alert): void                                                      | Dynamically updates the map to show new or changed alert information. |
+|                | showLocationDetails(locationId: INT): void                                                  | Displays detailed information about a specific location on the map.   |
+|                | updateMapWithAlert(alert: Alert): void                                                      | Dynamically updates the map to show new or changed alert information. |
 
 ### 3.5.2 ERD {#erd .unnumbered}
 
@@ -2175,7 +2175,7 @@ the database for and what it features.
 **Table 3.63: University**
 
 | Field Name         | Description                                           | Data Type    | Constraints                 |
-|--------------------|-------------------------------------------------------|--------------|-----------------------------|
+| ------------------ | ----------------------------------------------------- | ------------ | --------------------------- |
 | UniversityID       | Unique identifier for the university                  | INT          | PRIMARY KEY, AUTO_INCREMENT |
 | Name               | Name of the university                                | VARCHAR(255) | NOT NULL                    |
 | Location           | Address or general location of the university         | VARCHAR(255) |                             |
@@ -2190,7 +2190,7 @@ the database for and what it features.
 **Table 3.64: User**
 
 | Field Name   | Description                            | Data Type    | Constraints                 |
-|--------------|----------------------------------------|--------------|-----------------------------|
+| ------------ | -------------------------------------- | ------------ | --------------------------- |
 | UserID       | Unique identifier for the user         | INT          | PRIMARY KEY, AUTO_INCREMENT |
 | Role         | User\'s role (Student, Visitor, Staff) | VARCHAR(50)  | NOT NULL                    |
 | Username     | User\'s login username                 | VARCHAR(50)  | UNIQUE                      |
@@ -2205,7 +2205,7 @@ the database for and what it features.
 **Table 3.65: Admin**
 
 | Field Name | Description                             | Data Type    | Constraints                 |
-|------------|-----------------------------------------|--------------|-----------------------------|
+| ---------- | --------------------------------------- | ------------ | --------------------------- |
 | AdminID    | Unique identifier for the administrator | INT          | PRIMARY KEY, AUTO_INCREMENT |
 | UserID     | Foreign key linking to the User table   | INT          | FOREIGN KEY (User)          |
 | Username   | Admin\'s login username                 | VARCHAR(50)  | UNIQUE, NOT NULL            |
@@ -2218,7 +2218,7 @@ the database for and what it features.
 **Table 3.66: Location**
 
 | Field Name   | Description                                 | Data Type    | Constraints                 |
-|--------------|---------------------------------------------|--------------|-----------------------------|
+| ------------ | ------------------------------------------- | ------------ | --------------------------- |
 | LocationID   | Unique identifier for the location          | INT          | PRIMARY KEY, AUTO_INCREMENT |
 | UniversityID | Foreign key linking to the University table | INT          | FOREIGN KEY (University)    |
 | Name         | Name of the location (e.g., Building A)     | VARCHAR(255) | NOT NULL                    |
@@ -2230,7 +2230,7 @@ the database for and what it features.
 **Table 3.67: Event**
 
 | Field Name  | Description                               | Data Type     | Constraints                 |
-|-------------|-------------------------------------------|---------------|-----------------------------|
+| ----------- | ----------------------------------------- | ------------- | --------------------------- |
 | EventID     | Unique identifier for the event           | INT           | PRIMARY KEY, AUTO_INCREMENT |
 | Name        | Name of the event                         | VARCHAR (255) | NOT NULL                    |
 | Description | Detailed description of the event         | TEXT          |                             |
@@ -2244,7 +2244,7 @@ the database for and what it features.
 **Table 3.68: Facility**
 
 | Field Name   | Description                                                  | Data Type     | Constraints                 |
-|--------------|--------------------------------------------------------------|---------------|-----------------------------|
+| ------------ | ------------------------------------------------------------ | ------------- | --------------------------- |
 | FacilityID   | Unique identifier for the facility                           | INT           | PRIMARY KEY, AUTO_INCREMENT |
 | Name         | Name of the facility                                         | VARCHAR (255) | NOT NULL                    |
 | LocationID   | Foreign key linking to the Location table                    | INT           | FOREIGN KEY (Location)      |
@@ -2257,7 +2257,7 @@ the database for and what it features.
 **Table 3.69: Alert**
 
 | Field Name  | Description                               | Data Type   | Constraints                 |
-|-------------|-------------------------------------------|-------------|-----------------------------|
+| ----------- | ----------------------------------------- | ----------- | --------------------------- |
 | AlertID     | Unique identifier for the alert           | INT         | PRIMARY KEY, AUTO_INCREMENT |
 | AlertType   | Type of alert (e.g., Construction)        | VARCHAR(50) | NOT NULL                    |
 | LocationID  | Foreign key linking to the Location table | INT         | FOREIGN KEY (Location)      |
@@ -2272,7 +2272,7 @@ the database for and what it features.
 **Table 3.70: Route**
 
 | Field Name            | Description                                  | Data Type | Constraints                 |
-|-----------------------|----------------------------------------------|-----------|-----------------------------|
+| --------------------- | -------------------------------------------- | --------- | --------------------------- |
 | RouteID               | Unique identifier for the route              | INT       | PRIMARY KEY, AUTO_INCREMENT |
 | OriginLocationID      | Foreign key linking to the starting Location | INT       | FOREIGN KEY (Location)      |
 | DestinationLocationID | Foreign key linking to the ending Location   | INT       | FOREIGN KEY (Location)      |
@@ -2285,7 +2285,7 @@ the database for and what it features.
 **Table 3.71: Feedback**
 
 | Field Name  | Description                                  | Data Type    | Constraints                 |
-|-------------|----------------------------------------------|--------------|-----------------------------|
+| ----------- | -------------------------------------------- | ------------ | --------------------------- |
 | FeedbackID  | Unique identifier for the feedback           | INT          | PRIMARY KEY, AUTO_INCREMENT |
 | UserID      | Foreign key linking to the User table        | INT          | FOREIGN KEY (User)          |
 | Category    | Category of feedback (e.g., Obstacle Report) | VARCHAR(100) | NOT NULL                    |
@@ -2300,7 +2300,7 @@ the database for and what it features.
 **Table 3.72: Confirmed Report**
 
 | Field Name | Description                                | Data Type | Constraints                    |
-|------------|--------------------------------------------|-----------|--------------------------------|
+| ---------- | ------------------------------------------ | --------- | ------------------------------ |
 | ReportID   | Unique identifier for the confirmed report | INT       | PRIMARY KEY, AUTO_INCREMENT    |
 | FeedbackID | Foreign key linking to the Feedback table  | INT       | FOREIGN KEY (Feedback), UNIQUE |
 | LocationID | Foreign key linking to the location table  | INT       | FOREIGN KEY (Location)         |
@@ -2320,7 +2320,7 @@ accessibility, and integration with existing university infrastructure.
 **Table 3.73: Design Constraints**
 
 | **Requirement ID** | **Description**                                                                                                                                                      | **Priority** | **Author**    |
-|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|---------------|
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------------- |
 | REQ_DC001          | The CRN system shall be designed exclusively for mobile devices and must function on both iOS and Android platforms.                                                 | High         | Goh Chun Yong |
 | REQ_DC002          | The application shall rely on real-time campus infrastructure data (e.g., elevators, pathways), which may be constrained by sensor availability and network latency. | Medium       | Goh Chun Yong |
 | REQ_DC003          | The system shall use the existing university authentication system for user login.                                                                                   | Medium       | Goh Chun Yong |
@@ -2328,7 +2328,6 @@ accessibility, and integration with existing university infrastructure.
 | REQ_DC005          | The application shall be optimized for low battery consumption, minimizing GPS polling and background tasks.                                                         | Medium       | Goh Chun Yong |
 | REQ_DC006          | CRN system updates and fixes shall be distributed through the respective mobile app stores, subject to their approval processes.                                     | Low          | Goh Chun Yong |
 | REQ_DC007          | Major system updates must be scheduled during semester breaks to avoid interruptions in service during academic sessions.                                            | Low          | Goh Chun Yong |
-| REQ_DC008          | The system requires a stable internet connection for functionality. Offline mode will not be supported.                                                              | High         | Goh Chun Yong |
 
 ## 3.7 Software System Attributes {#software-system-attributes .unnumbered}
 
@@ -2344,20 +2343,22 @@ matter the situation.
 
 **Table 3.74: Availability**
 
-| **Requirement ID** | **Description**                                                                            | **Priority** | **Author**    |
-|--------------------|--------------------------------------------------------------------------------------------|--------------|---------------|
-| REQ_SSA001         | The system shall maintain at least 99.5% uptime monthly, ensuring continuous availability. | High         | Goh Chun Yong |
+| **Requirement ID** | **Description**                                                                                       | **Priority** | **Author**    |
+| ------------------ | ----------------------------------------------------------------------------------------------------- | ------------ | ------------- |
+| REQ_SSA001         | The system shall maintain at least 99.5% uptime monthly, ensuring continuous availability.            | High         | Goh Chun Yong |
+| REQ_SSA0015        | The system shall have an offline mode which provides properties of a physical map                     | High         | Goh Chun Yong |
+| REQ_SSA0016        | The system shall integrate existing university IoT infrastructure to reduce manual labour for updates | High         | Goh Chun Yong |
 
 ### Reliability
 
 **Table 3.75: Reliability**
 
 | **Requirement ID** | **Description**                                                                         | **Priority** | **Author**    |
-|--------------------|-----------------------------------------------------------------------------------------|--------------|---------------|
+| ------------------ | --------------------------------------------------------------------------------------- | ------------ | ------------- |
 | REQ_SSA002         | The system shall function consistently under normal and expected peak usage conditions. | High         | Goh Chun Yong |
 
 | REQ_SSA003 | All obstacles' reports shall be recorded accurately, ensuring no data loss or corruption.                       | High | Goh Chun Yong |
-|------------|-----------------------------------------------------------------------------------------------------------------|------|---------------|
+| ---------- | --------------------------------------------------------------------------------------------------------------- | ---- | ------------- |
 | REQ_SSA004 | The system shall handle a high volume of route request and concurrent users without crashing.                   | High | Goh Chun Yong |
 | REQ_SSA005 | The system shall respond to user route queries within 2 seconds and reflect real-time updates within 5 seconds. | High | Goh Chun Yong |
 
@@ -2366,7 +2367,7 @@ matter the situation.
 **Table 3.76: Security**
 
 | **Requirement ID** | **Description**                                                                                                           | **Priority** | **Author**    |
-|--------------------|---------------------------------------------------------------------------------------------------------------------------|--------------|---------------|
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------- | ------------ | ------------- |
 | REQ_SSA006         | The system shall protect user data through secure authentication and encrypted communication.                             | High         | Goh Chun Yong |
 | REQ_SSA007         | The platform shall employ encryption and access control to safeguard data.                                                | High         | Goh Chun Yong |
 | REQ_SSA008         | The server API shall implement authentication checks to prevent unauthorized access.                                      | High         | Goh Chun Yong |
@@ -2380,7 +2381,7 @@ matter the situation.
 **Table 3.77: Maintainability**
 
 | **Requirement ID** | **Description**                                                                                      | **Priority** | **Author**    |
-|--------------------|------------------------------------------------------------------------------------------------------|--------------|---------------|
+| ------------------ | ---------------------------------------------------------------------------------------------------- | ------------ | ------------- |
 | REQ_SSA013         | The system shall be built with modular architecture to support easy maintenance and feature updates. | Medium       | Goh Chun Yong |
 | REQ_SSA014         | The code shall be maintained and managed using a version control system.                             | High         | Goh Chun Yong |
 
@@ -2389,7 +2390,7 @@ matter the situation.
 **Table 3.78: Portability**
 
 | **Requirement ID** | **Description**                                                                   | **Priority** | **Author**    |
-|--------------------|-----------------------------------------------------------------------------------|--------------|---------------|
+| ------------------ | --------------------------------------------------------------------------------- | ------------ | ------------- |
 | REQ_SSA015         | The system shall support iOS and Android platforms with consistent functionality. | High         | Goh Chun Yong |
 
 ## 3.8 Supporting Information {#supporting-information .unnumbered}
@@ -2409,7 +2410,7 @@ priorities. There's 14 questions and 2 open ended questions.
 [Click here to see the form.](https://forms.gle/hf2fkF1iTNSwabhT8)
 
 |                                                                                                                           |               |                                                                                                                                 |
-|---------------------------------------------------------------------------------------------------------------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------|
+| ------------------------------------------------------------------------------------------------------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | Question                                                                                                                  | Kano Category | Justification                                                                                                                   |
 | What is your role at the university?                                                                                      | None          | Over 80% of respondents identified as Faculty and Student. Which may introduce bias toward the needs of these groups.           |
 | Do you have any accessibility needs (e.g: wheelchair access)?                                                             | None          | Only 25% reported accessibility needs, so the result may introduce bias to non-accessibility groups*.*                          |
@@ -2714,7 +2715,7 @@ This section specifies how the Campus Accessibility Navigation System
 **Table 4.1 \*How\* Verification Table**
 
 | Testing Type              | Description                                                                                                                                                                |
-|---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Functional Testing**    | Test each function in Section 3.1 (Functions) to ensure each function performs as expected output.                                                                         |
 | **Usability Testing**     | Through users interacting with the system to detect any usability issues, and gather feedback from the user interface as described in Section 3.3(Usability requirements). |
 | **Performance Testing**   | Evaluate system's performance, responsiveness, and stability under expected load conditions.                                                                               |
@@ -2726,7 +2727,7 @@ This section specifies how the Campus Accessibility Navigation System
 **Table 4.2 \*Who\* Verification Table**
 
 | Name                       | Description                                                                                                                                                                                          |
-|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Development Team (Group 3) | Will be responsible for conducting unit testing during development and initial functional and integration testing of their respective modules.                                                       |
 | Quality Assurance Team     | Will be responsible for independent functional testing, usability testing, performance testing, integration testing, accessibility testing, and security testing in a dedicated testing environment. |
 | Stakeholders/End Users     | Representative users from the different actor roles will participate in usability testing sessions to provide feedback on the system\'s ease of use and effectiveness.                               |
@@ -2736,7 +2737,7 @@ This section specifies how the Campus Accessibility Navigation System
 **Table 4.3 \*When\* Verification Table**
 
 | Timeline                                                   | Description                                                                                                                      |
-|------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| ---------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | **During each sprint/iteration**                           | Unit testing will be performed by developers as code is written. After the completion of significant modules.                    |
 | **After the completion of significant features/modules**   | Functional and integration testing will be conducted by the development and/or QA team. Periodically throughout development      |
 | **At the end of development cycles/before major releases** | Comprehensive system testing, performance testing, security testing, and accessibility testing will be performed by the QA team. |
@@ -2905,7 +2906,7 @@ verified.
 **Table 5.1 Acronyms and Abbreviations**
 
 | Term/Abbreviation | Definition                                                                                                                                   |
-|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | GUI               | Graphical User Interface: a way of arranging information on a computer screen that is easy to understand and use.                            |
 | GPS               | Global Positioning System: global positioning system that can show the exact position of a person or thing by using signals from satellites. |
 | Wi-Fi             | Wireless Fidelity: a system for connecting electronic equipment to the internet without using wires.                                         |

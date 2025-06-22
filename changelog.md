@@ -92,13 +92,14 @@ Informal grammar and vague terminology in describing user interface elements.
 - Removed REQ_DC008 from Table 3.73 (Design Constraints), Section 3 (Requirements)
 
 ### Change 2
-- Added REQ_SSA002 to Table 3.74 (Availability), Section 3 (Requirements)
-- REQ_SSA002 | The system shall have an offline mode which provides properties of a physical map | High | Morgan
+- Added REQ_SSA0015 to Table 3.74 (Availability), Section 3 (Requirements)
+- | REQ_SSA0015        | The system shall have an offline mode which provides properties of a physical map                     | High         | Goh Chun Yong |
+### Change 3
+- Added REQ_SSA0016 to Table 3.74 (Availability), Section 3 (Requirements)
+- | REQ_SSA0016        | The system shall integrate existing university IoT infrastructure to reduce manual labour for updates | High         | Goh Chun Yong |
 
-
-
-# Changelog
-
+## Nazim
+### Change 4
 #### Description of change  
 Changed REQ_UCA005: Rephrased “Admin able to view ongoing and upcoming events, include location of the events.” to “The administrator shall be able to view all ongoing and upcoming events along with their respective locations.”
 #### Date  
@@ -108,6 +109,7 @@ Nazim
 #### Reason  
 To correct grammatical structure and clearly express the scope of the functionality as per formal specification norms.
 
+### Change 5
 #### Description of change  
 Changed REQ_UCA003: Rephrased “Admin able to modify events to events calendar.” to “The administrator shall be able to update existing events in the event calendar.”
 #### Date  
@@ -117,6 +119,7 @@ Nazim
 #### Reason  
 To clarify action type (“modify”) and correct prepositional error for technical accuracy.
 
+### Change 6
 #### Description of change
 Changed user characteristics description: Rephrased “Familiar with campus buildings like facilities, and some event locations that relevant to their workplace.” to “Familiar with campus buildings such as Faculties and relevant event locations associated with their workplace.”
 #### Date
@@ -126,6 +129,7 @@ Nazim
 #### Reason
 To replace vague and grammatically incorrect expressions with precise and contextually accurate terminology.
 
+### Change 7
 #### Description of change  
 Changed visitor expectations: Rephrased “Like students.” to “Visitors are expected to possess basic smartphone skills similar to students.”
 #### Date  
@@ -135,6 +139,7 @@ Nazim
 #### Reason  
 To replace a fragment with a full, meaningful sentence clearly stating user capability expectations.
 
+### Change 8
 #### Description of change  
 Changed REQSQ007: Rephrased “Delete and save changes buttons for desire action.” to “The interface shall show ‘Delete’ and ‘Save Changes’ buttons to allow administrators to perform event update actions.”
 #### Date  
