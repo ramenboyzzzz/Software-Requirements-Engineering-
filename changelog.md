@@ -1,90 +1,3 @@
-# Agreement Defects  
-
-## Defect 1:
-### Stakeholder: EndUsers
-### Description:
-
-As per REQ_DC008 in Table 3.73 (Design Constraints), offline mode will not be supported.
-The questionnaire results (Section 3.8.1) indicate that stakeholders consider availability to be very important. Section 3.1 (Functions) ommited solutions to mitigate this availability concern, and a temporary solution is instead used to compensate.
-
-### Possible Root Cause:
-The engineers overemphasized on data validation to ensure users don't receive outdated information, leading to an oversight in considering the system's operational requirements for maintaining its availability.
-
-## Defect 2:
-### Stakeholders: University Administration
-### Description:
-
-As detailed in Section 3.1 (Functions), several critical operations within the system's functionalities are contingent upon human input. These include, but are not limited to, 3.1.1.6 Administrator add event, 3.1.1.7 Administrator edit event, 3.1.1.8 Administrator view users’ feedback, and 3.1.1.9 Administrator confirming report. A probable concern from the university regarding the potential resources required to consistently maintain the information validity of the system, given the manual nature of these functions.
-
-### Possible Root Cause:
-As stated in REQ_DC002 in Section 3.6 (Design Constraints), Table 3.73 (Design Constraints), "The application shall rely on real-time campus infrastructure data (e.g., elevators, pathways), which may be constrained by sensor availability and network latency". The university's IoT infrastructure is acknowledged, but there is a lack of functional solutions to reduce human dependency.
-
-# Documentation Defects
-## Defect 1:
-### Conflict Type: Ambiguity in Requirement Statement
-
-### Original Statement:
-"Admin able to view ongoing and upcoming events, include location of the events."
-
-### Description of Conflict:
-It is in Use case REQ_UCA005
-The sentence has structural issues and unclear intent about the inclusion of location data.
-
-### Possible Root Cause:
-Poor sentence construction and inconsistent phrasing.
-
-## Defect 2:
-### Conflict Type: Ambiguity in Requirement Statement
-
-### Original Statement:
-"Admin able to modify events to events calendar."
-
-### Description of Conflict:
-It is in Use case REQ_UCA003
-The use of “to” is incorrect, and the sentence structure is unclear about intended functionality.
-
-### Possible Root Cause:
-Improper grammar and lack of formal language in requirement writing.
-
-## Defect 3:
-### Conflict Type: Ambiguity in Requirement Statement
-
-### Original Statement:
-"Familiar with campus buildings like facilities, and some event locations that relevant to their workplace."
-
-### Description of Conflict:
-It is in table 1.5 column 3 row 4
-The sentence is grammatically incorrect and uses vague terminology ("facilities"), could also be a typo and facilities is faculties.
-
-### Possible Root Cause:
-Improper grammar and lack of formal language in requirement writing.
-
-## Defect 4:
-### Conflict Type: Ambiguity in Requirement Statement
-
-### Original Statement:
-"Like students."
-
-### Description of Conflict:
-It is in table 1.5 column 3 row 5
-Entirely unclear and incomplete; lacks any actionable meaning.
-
-### Possible Root Cause:
-Placeholder or shorthand left unrefined in final documentation.
-
-## Defect 5:
-### Conflict Type: Ambiguity in Requirement Statement
-
-### Original Statement:
-"Delete and save changes buttons for desire action."
-
-### Description of Conflict:
-It is in table 3.7 column 2 row 5 line 4
-The phrase "desire action" is incorrect, and the overall sentence is unclear regarding UI functionality.
-
-### Possible Root Cause:
-Informal grammar and vague terminology in describing user interface elements.
-
 # SRS ChangeLog
 
 ### Change 1
@@ -168,3 +81,171 @@ Changed REQSQ007: Rephrased “Delete and save changes buttons for desire action
 Nazim
 #### Reason  
 To resolve vague intent and grammar issues by clearly defining UI elements and their purpose in the system.
+
+### Change 9
+#### Description of change
+Added a new non-functional requirement (REQ_NFR_005) stating that the system must comply with PDPA/GDPR data protection standards for handling user preferences and login information.
+
+#### Date
+2025-06-21
+
+#### Author
+Amir Hamzah
+
+#### Reason
+To address missing legal and privacy compliance requirements in the original SRS.
+
+### Change 10
+Description of change
+Introduced error handling requirements to describe how the system behaves during GPS signal loss, login failure, or service unavailability.
+
+#### Date
+2025-06-21
+
+#### Author
+Amir Hamzah
+
+#### Reason
+To ensure the system defines behavior for failure conditions and provides fallback mechanisms.
+
+### Change 11
+#### Description of change
+Clarified guest user behavior by listing restricted features (e.g., event sign-up, feedback submission) and updating relevant use case flow.
+
+#### Date
+2025-06-21
+
+#### Author
+Amir Hamzah
+
+#### Reason
+To resolve ambiguity around guest user capabilities, ensuring functional coverage.
+
+### Change 12
+#### Description of change
+Added REQ_FN_011 detailing when push notifications are sent (e.g., confirmed obstacle reports, updated events, facility outages).
+
+#### Date
+2025-06-21
+
+#### Author
+Amir Hamzah
+
+#### Reason
+To address the absence of functional triggers for push notification behavior.
+
+### Change 13
+#### Description of change
+Added REQ_NFR_006 specifying that the UI must conform to WCAG 2.1 Level AA standards and support assistive features like screen readers and high-contrast modes.
+
+#### Date
+2025-06-22
+
+#### Author
+Amir Hamzah
+
+#### Reason
+To ensure compliance with accessibility standards critical for the system’s target users.
+
+### Change 14
+#### Description of change
+Refined REQ_CRN_005 from “user-friendly” to a measurable requirement using UI heuristics: “The map interface shall allow users to find accessible routes within 3 clicks, with an average error rate of less than 10%.”
+
+#### Date
+2025-06-21
+
+#### Author
+Amir Hamzah
+
+#### Reason
+To make the requirement testable and align it with SMART criteria for usability.
+
+### Change 15
+#### Description of change
+Corrected REQ_IO0703 to move “Toggle switch” from input field description to output display specification under system UI elements.
+
+#### Date
+2025-06-21
+
+#### Author
+Amir Hamzah
+
+#### Reason
+To resolve a classification error between input and output components in interface documentation.
+
+### Change 16
+#### Description of change
+Resolved inconsistency between REQ_PR0009 and REQ_PR0014 by standardizing all real-time updates to reflect within 5 seconds under normal load, and allowing fallback up to 10 seconds under high load.
+
+#### Date
+2025-06-21
+
+#### Author
+Amir Hamzah
+
+#### Reason
+To fix conflicting requirements and provide a unified performance expectation.
+
+### Change 17
+#### Description of change
+Added a requirement for disability-specific route customization: “The system shall allow users to select mobility preferences (e.g., avoid stairs, prefer ramps) which impact route calculation.”
+
+#### Date
+2025-06-21
+
+#### Author
+Amir Hamzah
+
+#### Reason
+To fulfill an implied accessibility feature based on the system’s inclusive navigation goals.
+
+### Change 18 
+#### Description of change  
+Expanded REQ_ADMIN_003 to specify the exact system behavior after an administrator confirms a report. The system now updates the map, recalculates affected routes, sends notifications to impacted users, and logs the admin's action for traceability.  
+#### Date  
+2025-06-22  
+#### Author  
+Amir Hamzah  
+#### Reason  
+To fully describe the workflow and downstream effects of administrator confirmations based on the actual feedback management process.
+
+
+### Change 19
+#### Description of change
+Included feedback handling workflow: admin can mark feedback as “resolved,” “in progress,” or “rejected,” and optionally reply to users.
+
+#### Date
+2025-06-21
+
+#### Author
+Amir Hamzah
+
+#### Reason
+To complete the feedback system logic and improve response transparency.
+
+### Change 20
+#### Description of change
+Inserted a multi-language support requirement: “The application shall support at least English, Malay, and Mandarin languages, selectable at login.”
+
+#### Date
+2025-06-21
+
+#### Author
+Amir Hamzah
+
+#### Reason
+To accommodate diverse user backgrounds within the university community.
+
+### Change 21
+#### Description of change
+Added integration error-handling behavior: “If facility or event APIs are unavailable, the system shall display a message and cache the last known data for up to 24 hours.”
+
+#### Date
+2025-06-21
+
+#### Author
+Amir Hamzah
+
+#### Reason
+To define system behavior during third-party system downtime and improve resilience.
+

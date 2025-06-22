@@ -516,13 +516,14 @@ with the **project scope** by:
 | REQ_CRN_002        | The system shall ensure all users can move around campus safely and efficiently.                                            | Chun Yong  |
 | REQ_CRN_003        | The system shall provide real-time updates on accessibility issues to help users make better navigation decisions.          | Chun Yong  |
 | REQ_CRN_004        | The system shall allow users to report encountered problems and submit suggestions.                                         | Chun Yong  |
-| REQ_CRN_005        | The system shall provide an interactive, user-friendly map-based navigation interface.                                      | Chun Yong  |
+| REQ_CRN_005        | The system shall provide an interactive map interface that allows users to locate accessible routes within 3 clicks, and maintain an average error rate of under 10% during navigation tasks. | Chun Yong |          
 | REQ_CRN_006        | The system shall allow users to access available campus facilities through integration with the facilities system.          | Chun Yong  |
 | REQ_CRN_007        | The system shall allow users to view current campus events and receive relevant event-based navigation updates.             | Chun Yong  |
 | REQ_CRN_008        | The system shall generate personalized navigation routes based on user accessibility preferences (e.g., avoid stairs).      | Chun Yong  |
 | REQ_CRN_009        | The system shall enable secure login using institutional credentials to ensure user data privacy and personalized access.   | Chun Yong  |
 | REQ_CRN_010        | The system shall dynamically reroute users in response to live data such as elevator outages, construction, or event zones. | Chun Yong  |
 | REQ_CRN_011        | The system shall support continuous improvement by analysing user feedback and navigation data.                             | Chun Yong  |
+
 
 ### 1.3.2 Product Functions {#product-functions .unnumbered}
 
@@ -533,6 +534,8 @@ height="4.489583333333333in"}**Figure 1.3: Use Case Diagram of CRN**
 
 ![](media/image5.png){width="5.95833552055993in"
 height="6.260415573053368in"}
+
+Note: Guest users can view the navigation map and event calendar but cannot perform actions such as submitting feedback, registering for events, or saving preferences.
 
 **Figure 1.4: Use Case Diagram of Actor (End Users)**
 
@@ -557,15 +560,17 @@ height="6.260415573053368in"}
 
 **Table 1.4: Use Case Diagram of Actor (Admin)**
 
-| **Use Case ID** | **Use Case Name**           | **Description**                                                                                                | **Author**    |
-| --------------- | --------------------------- | -------------------------------------------------------------------------------------------------------------- | ------------- |
-| REQ_UCA001      | Review feedback             | Administrator can access and review feedback submitted by end users.                                           | CHANG HOE HIN |
-| REQ_UCA002      | Validate End Users' reports | Verify the accuracy of reported obstacles                                                                      | CHANG HOE HIN |
-| REQ_UCA003      | Edit events                 | The administrator shall be able to update existing events in the event calendar.                               | CHANG HOE HIN |
-| REQ_UCA004      | Add events                  | Admin able to add events to events calendar.                                                                   | CHANG HOE HIN |
-| REQ_UCA005      | View events                 | The administrator shall be able to view all ongoing and upcoming events along with their respective locations. | CHANG HOE HIN |
-| REQ_UCA006      | Log Out                     | Allow admin to log out.                                                                                        | CHANG HOE HIN |
-| REQ_UCA007      | Log In                      | Allow admin to securely log in into the platform.                                                              | CHANG HOE HIN |
+| **Use Case ID** | **Use Case Name**           | **Description**                                                                                                                                                                      | **Author**    |
+| --------------- | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------- |
+| REQ_UCA001      | Review feedback             | Admin can access and review user feedback, and mark each submission as "Resolved", "In Progress", or "Rejected". The system shall allow optional admin responses visible to the user.| CHANG HOE HIN |
+| REQ_UCA002      | Validate End Users' reports | Verify the accuracy of reported obstacles                                                                      																	   | CHANG HOE HIN |
+| REQ_UCA003      | Edit events                 | The administrator shall be able to update existing events in the event calendar.                               																	   | CHANG HOE HIN |
+| REQ_UCA004      | Add events                  | Admin able to add events to events calendar.                                                                   																	   | CHANG HOE HIN |
+| REQ_UCA005      | View events                 | The administrator shall be able to view all ongoing and upcoming events along with their respective locations. 																	   | CHANG HOE HIN |
+| REQ_UCA006      | Log Out                     | Allow admin to log out.                                                                                        																	   | CHANG HOE HIN |
+| REQ_UCA007      | Log In                      | Allow admin to securely log in into the platform.                                                              																	   | CHANG HOE HIN |
+
+
 
 ### 1.3.3 User Characteristics {#user-characteristics .unnumbered}
 
@@ -671,6 +676,23 @@ Retrieved from
 This section described each functional requirement that the system must
 perform by the end of development. Each functional requirement will be
 detailed and supported with a sequence diagram.
+
+####  Push Notification Trigger
+
+The system shall send push notifications to users in the following scenarios:
+- When a confirmed obstacle affects a planned route.
+- When a new event is added near the user’s current path.
+- When a facility status changes (e.g., elevator outage near the user’s path).
+
+### Accessibility Preference-Based Routing
+
+The system shall allow users to set routing preferences based on mobility limitations, such as:
+- Avoid stairs
+- Prefer ramps
+- Avoid steep slopes
+- Prefer shortest distance
+These preferences shall dynamically influence the pathfinding algorithm and result set.
+
 
 ###  3.1.1 Sequence Diagram {#sequence-diagram .unnumbered}
 
@@ -1334,6 +1356,16 @@ the confirmed report</p></li>
 ![](media/image15.png){width="6.261111111111111in"
 height="6.452083333333333in"}
 
+#### REQ_ADMIN_003: Administrator Confirms Report
+
+When an administrator confirms a user-submitted report (e.g., obstacle, facility issue), the system shall:
+1. Update the map by marking the affected area with an alert icon.
+2. Recalculate routes that intersect the affected area to reflect detours.
+3. Notify users whose saved or active routes are impacted.
+4. Log the administrator’s action for audit and traceability.
+
+This requirement ensures that confirmed feedback results in visible and actionable system changes for end-users.
+
 **Figure 3.9: Administrator confirming report Sequence Diagram**
 
 #### 3.1.1.10 Route navigation {#route-navigation .unnumbered}
@@ -1419,23 +1451,25 @@ table below will describe all the quality requirements and its details.
 
 **Table 3.11: Performance Requirements**
 
-| **Requirement ID** | **Description**                                                                                                                 | **Priority** | **Author**    |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------------- |
-| REQ_PR0001         | The system shall display accessible route results within 2 seconds after user input.                                            | High         | Goh Chun Yong |
-| REQ_PR0002         | Real-time updates (e.g., construction alerts, elevator outages) shall be reflected on the interface within 5 seconds of change. | High         | Goh Chun Yong |
-| REQ_PR0003         | The system shall be available 24/7, with an uptime of at least 99.5% per month.                                                 | High         | Goh Chun Yong |
-| REQ_PR0004         | Scheduled maintenance shall not exceed 2 hours per month, and users and announcements must be notified 24 hours in advance.     | Low          | Goh Chun Yong |
-| REQ_PR0005         | The system shall support at least 500 concurrent users without performance degradation.                                         | High         | Goh Chun Yong |
-| REQ_PR0006         | Under stress load, system response time shall not exceed 5 seconds for 95% of requests.                                         | Medium       | Goh Chun Yong |
-| REQ_PR0007         | The system shall process a minimum of 100 location queries per minute without affecting system performance.                     | High         | Goh Chun Yong |
-| REQ_PR0008         | The system shall support the addition of 50 events per hour without affecting system performance.                               | Low          | Goh Chun Yong |
-| REQ_PR0009         | The system shall process and reflect real-time changes submitted by staff/group admins within 5 seconds.                        | High         | Goh Chun Yong |
-| REQ_PR0010         | All user-facing interfaces shall synchronize with the database within 3 seconds after any user action.                          | Medium       | Goh Chun Yong |
-| REQ_PR0011         | The system shall maintain a request error rate below 1% for all transactions under normal conditions.                           | High         | Goh Chun Yong |
-| REQ_PR0012         | System resource usage (CPU, memory) shall remain below 80% during peak operation.                                               | Medium       | Goh Chun Yong |
-| REQ_PR0013         | In the event of failure, the system shall recover and be fully operational within 30 minutes.                                   | Medium       | Goh Chun Yong |
-| REQ_PR0014         | The data displayed to users shall be eventually consistent across all modules within 5 seconds of updates.                      | Medium       | Goh Chun Yong |
-| REQ_PR0015         | The loading animation shall not exceed 3 seconds when initializing the app.                                                     | Low          | Goh Chun Yong |
+| **Requirement ID** | **Description**                                                                                                                 																					| **Priority** | **Author**    |
+| ------------------ | -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------ | ------------- |
+| REQ_PR0001         | The system shall display accessible route results within 2 seconds after user input.                                           																					| High         | Goh Chun Yong |
+| REQ_PR0002         | Real-time updates (e.g., construction alerts, elevator outages) shall be reflected on the interface within 5 seconds of change. 																					| High         | Goh Chun Yong |
+| REQ_PR0003         | The system shall be available 24/7, with an uptime of at least 99.5% per month.                                                 																					| High         | Goh Chun Yong |
+| REQ_PR0004         | Scheduled maintenance shall not exceed 2 hours per month, and users and announcements must be notified 24 hours in advance.     																					| Low          | Goh Chun Yong |
+| REQ_PR0005         | The system shall support at least 500 concurrent users without performance degradation.                                         																					| High         | Goh Chun Yong |
+| REQ_PR0006         | Under stress load, system response time shall not exceed 5 seconds for 95% of requests.                                         																					| Medium       | Goh Chun Yong |
+| REQ_PR0007         | The system shall process a minimum of 100 location queries per minute without affecting system performance.                     																					| High         | Goh Chun Yong |
+| REQ_PR0008         | The system shall support the addition of 50 events per hour without affecting system performance.                               																					| Low          | Goh Chun Yong |
+| REQ_PR0009         | The system shall process and reflect real-time changes (e.g., event or facility updates) on the user interface within 5 seconds under normal load. During peak load, delay may increase up to 10 seconds overall.| High         | Goh Chun Yong |
+| REQ_PR0010         | All user-facing interfaces shall synchronize with the database within 3 seconds after any user action.                         																				    | Medium       | Goh Chun Yong |
+| REQ_PR0011         | The system shall maintain a request error rate below 1% for all transactions under normal conditions.                          																				    | High         | Goh Chun Yong |
+| REQ_PR0012         | System resource usage (CPU, memory) shall remain below 80% during peak operation.                                              																				    | Medium       | Goh Chun Yong |
+| REQ_PR0013         | In the event of failure, the system shall recover and be fully operational within 30 minutes.                                   																		            | Medium       | Goh Chun Yong |
+| REQ_PR0014         | The system shall achieve eventual consistency across all backend modules (e.g., route database, event engine, facility status) within 5 seconds under normal conditions and 15 seconds under high load.          | Medium       | Goh Chun Yong |
+| REQ_PR0015         | The loading animation shall not exceed 3 seconds when initializing the app.                                                     																		            | Low          | Goh Chun Yong |
+
+
 
 ## 3.3 Usability Requirements {#usability-requirements .unnumbered}
 
@@ -1445,18 +1479,22 @@ experience for all users.
 
 **Table 3.12: Usability Requirement**
 
-| **Requirement ID** | **Description**                                                                                        | **Priority** | **Author**    |
-| ------------------ | ------------------------------------------------------------------------------------------------------ | ------------ | ------------- |
-| REQ_UR001          | New user should be good at using the application within 10 minutes of first use.                       | High         | Chang Hoe Hin |
-| REQ_UR002          | The system shall respond to end user's input within 2 seconds.                                         | High         | Chang Hoe Hin |
-| REQ_UR003          | The system shall provide clear error message.                                                          | Medium       | Chang Hoe Hin |
-| REQ_UR004          | After navigation end, user shall be able to rate their experience.                                     | Low          | Chang Hoe Hin |
-| REQ_UR005          | The system shall have a minimum average user rating of 4.0/5.0 in usability surveys.                   | Medium       | Chang Hoe Hin |
-| REQ_UR006          | The user shall have no more than 3 clicks to access the core features.                                 | High         | Chang Hoe Hin |
-| REQ_UR007          | Screen transition and map loading should take not more than 3 seconds.                                 | High         | Chang Hoe Hin |
-| REQ_UR008          | The system shall let end users categorize their feedback.                                              | Low          | Chang Hoe Hin |
-| REQ_UR009          | When searching location, the system shall provide pre-filled suggestions to minimize user typing time. | Low          | Chang Hoe Hin |
-| REQ_UR010          | The system shall provide FAQ section                                                                   | Medium       | Chang Hoe Hin |
+| **Requirement ID** | **Description**                                                                                        						| **Priority** | **Author**    |
+| ------------------ | -----------------------------------------------------------------------------------------------------------------------------| ------------ | ------------- |
+| REQ_UR001          | New user should be good at using the application within 10 minutes of first use.                       						| High         | Chang Hoe Hin |
+| REQ_UR002          | The system shall respond to end user's input within 2 seconds.                                         						| High         | Chang Hoe Hin |
+| REQ_UR003          | The system shall provide clear error message.                                                          						| Medium       | Chang Hoe Hin |
+| REQ_UR004          | After navigation end, user shall be able to rate their experience.                                     						| Low          | Chang Hoe Hin |
+| REQ_UR005          | The system shall have a minimum average user rating of 4.0/5.0 in usability surveys.                   						| Medium       | Chang Hoe Hin |
+| REQ_UR006          | The user shall have no more than 3 clicks to access the core features.                                 						| High         | Chang Hoe Hin |
+| REQ_UR007          | Screen transition and map loading should take not more than 3 seconds.                                 						| High         | Chang Hoe Hin |
+| REQ_UR008          | The system shall let end users categorize their feedback.                                              						| Low          | Chang Hoe Hin |
+| REQ_UR009          | When searching location, the system shall provide pre-filled suggestions to minimize user typing time. 						| Low          | Chang Hoe Hin |
+| REQ_UR010          | The system shall provide FAQ section                                                                   						| Medium       | Chang Hoe Hin |
+| REQ_UR011	         | The UI must conform to WCAG 2.1 Level AA standards and support assistive features like screen readers and high-contrast modes| High		   | Amir Hamzah   |
+| REQ_UR013			 | The system shall support multiple languages (malay,mandarin,tamil and english) 												| Medium	   | Amir Hamzah   |
+
+
 
 ## 3.4 Interface Requirements {#interface-requirements .unnumbered}
 
@@ -1739,7 +1777,7 @@ will show back to them during interactions.
 | Item           | Travel Time & Distance Display (Output)  |
 | Description    | Displays estimated time and distance     |
 | Purpose        | To inform user of current route progress |
-| Input Format   | Toggle switch                            |
+| Input Format   | Not Applicable (System-generated output) |
 | Valid Input    | Not Applicable                           |
 | Related I/O    | None                                     |
 | Author         | Yee Si Shun                              |
@@ -2357,11 +2395,17 @@ matter the situation.
 | ------------------ | --------------------------------------------------------------------------------------- | ------------ | ------------- |
 | REQ_SSA002         | The system shall function consistently under normal and expected peak usage conditions. | High         | Goh Chun Yong |
 
-| REQ_SSA003 | All obstacles' reports shall be recorded accurately, ensuring no data loss or corruption.                       | High | Goh Chun Yong |
-| ---------- | --------------------------------------------------------------------------------------------------------------- | ---- | ------------- |
-| REQ_SSA004 | The system shall handle a high volume of route request and concurrent users without crashing.                   | High | Goh Chun Yong |
-| REQ_SSA005 | The system shall respond to user route queries within 2 seconds and reflect real-time updates within 5 seconds. | High | Goh Chun Yong |
+| REQ_SSA003 	| All obstacles' reports shall be recorded accurately, ensuring no data loss or corruption.                       | High | Goh Chun Yong |
+| ---------- 	| --------------------------------------------------------------------------------------------------------------- | ---- | ------------- |
+| REQ_SSA004 	| The system shall handle a high volume of route request and concurrent users without crashing.                   | High | Goh Chun Yong |
+| REQ_SSA005 	| The system shall respond to user route queries within 2 seconds and reflect real-time updates within 5 seconds. | High | Goh Chun Yong |
+| REQ_SSA001_EX | The system shall have build in error handling to handle when system misbehaves                                  | High | Amir Hamzah   |
+| REQ_SSA002_EX | The system shall display a warning in an event when data cant be retrieve 									  | High | Amir Hamzah   |		
 
+If the system cannot retrieve data from the event or facility management APIs, it shall:
+- Display a warning: "Some data may be outdated"
+- Use cached data from the last successful sync (up to 24 hours old)
+- Retry synchronization in the background every 10 minutes
 ### Security  {#security}
 
 **Table 3.76: Security**
@@ -2375,6 +2419,7 @@ matter the situation.
 | REQ_SSA010         | The system shall conduct regular security vulnerability assessments and penetration testing.                              | Medium       | Goh Chun Yong |
 | REQ_SSA011         | The platform shall have a built-in firewall to protect against unauthorized access and network attacks.                   | High         | Goh Chun Yong |
 | REQ_SSA012         | The platform shall have data masking techniques in place to protect sensitive information in non-production environments. | Medium       | Goh Chun Yong |
+| REQ_SSA013         | the system must comply with PDPA/GDPR data protection standards for handling user preferences and login information.      | High         | Amir Hamzah   |
 
 ### Maintainability
 
