@@ -12,7 +12,7 @@ Conflicts with needs of stakeholders
 
 ### Change 2
 #### Description of change
-Added REQ_SSA0015 to Table 3.74 (Availability), Section 3 (Requirements)
+Added REQ_SSA015 to Table 3.74 (Availability), Section 3 (Requirements)
 | REQ_SSA015        | The system shall have an offline mode which provides properties of a physical map                     | High         | Goh Chun Yong |
 #### Date
 2025-06-21
@@ -23,7 +23,7 @@ To fufill needs of stakeholders (End-users)
 
 ### Change 3
 #### Description of change
-Added REQ_SSA0016 to Table 3.74 (Availability), Section 3 (Requirements)
+Added REQ_SSA016 to Table 3.74 (Availability), Section 3 (Requirements)
 | REQ_SSA016        |         | High         | Goh Chun Yong |
 #### Date
 2025-06-22
