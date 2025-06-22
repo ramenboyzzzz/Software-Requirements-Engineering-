@@ -561,9 +561,9 @@ height="6.260415573053368in"}
 |-----------------|-----------------------------|---------------------------------------------------------------------------------|---------------|
 | REQ_UCA001      | Review feedback             | Administrator can access and review feedback submitted by end users.            | CHANG HOE HIN |
 | REQ_UCA002      | Validate End Users' reports | Verify the accuracy of reported obstacles                                       | CHANG HOE HIN |
-| REQ_UCA003      | Edit events                 | Admin able to modify events to events calendar.                                 | CHANG HOE HIN |
+| REQ_UCA003      | Edit events                 | The administrator shall be able to update existing events in the event calendar.                                 | CHANG HOE HIN |
 | REQ_UCA004      | Add events                  | Admin able to add events to events calendar.                                    | CHANG HOE HIN |
-| REQ_UCA005      | View events                 | Admin able to view ongoing and upcoming events, include location of the events. | CHANG HOE HIN |
+| REQ_UCA005      | View events                 | The administrator shall be able to view all ongoing and upcoming events along with their respective locations. | CHANG HOE HIN |
 | REQ_UCA006      | Log Out                     | Allow admin to log out.                                                         | CHANG HOE HIN |
 | REQ_UCA007      | Log In                      | Allow admin to securely log in into the platform.                               | CHANG HOE HIN |
 
@@ -581,8 +581,8 @@ role.
 | Students                             | Basic Smartphone Usage            | Know how to download and basic use of mobile applications.                                                 |
 |                                      | General Digital Literacy          | Use search engine for information online and interaction with digital services.                            |
 | Faculty and Staff                    | Moderate Digital Literacy         | Able to use digital tools like email for work and communication                                            |
-|                                      | Familiarity with Campus Resources | Familiar with campus buildings like facilities, and some event locations that relevant to their workplace. |
-| Visitors                             | Basic Smartphone Usage            | Like students                                                                                              |
+|                                      | Familiarity with Campus Resources | Familiar with campus buildings such as Faculties and relevant event locations associated with their workplace. |
+| Visitors                             | Basic Smartphone Usage            | Visitors are expected to possess basic smartphone skills similar to students                                                                                              |
 |                                      | Limited or No Campus Familiarity  | Expected no knowledge of campus layout at all.                                                             |
 | Administrators and Campus Management | High Digital Literacy             | Proficient use of various software applications.                                                           |
 |                                      | Comprehensive Campus Knowledge    | Deep understanding campus of structure                                                                     |
@@ -1160,7 +1160,7 @@ accessed the event management section.</td>
 <li><p>System shows event details.</p></li>
 <li><p>Admins able to modify the event’s information in the input
 fields.</p></li>
-<li><p>Delete and save changes buttons for desire action.</p></li>
+<li><p>The interface shall show ‘Delete’ and ‘Save Changes’ buttons to allow administrators to perform event update actions.</p></li>
 </ol></td>
 </tr>
 <tr class="odd">
