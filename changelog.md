@@ -11,7 +11,7 @@ The questionnaire results (Section 3.8.1) indicate that stakeholders consider av
 The engineers overemphasized on data validation to ensure users don't receive outdated information, leading to an oversight in considering the system's operational requirements for maintaining its availability.
 
 ## Defect 2:
-### Stakeholders: University Admin
+### Stakeholders: University Administration
 ### Description:
 
 As detailed in Section 3.1 (Functions), several critical operations within the system's functionalities are contingent upon human input. These include, but are not limited to, 3.1.1.6 Administrator add event, 3.1.1.7 Administrator edit event, 3.1.1.8 Administrator view users’ feedback, and 3.1.1.9 Administrator confirming report. A probable concern from the university regarding the potential resources required to consistently maintain the information validity of the system, given the manual nature of these functions.
@@ -87,18 +87,38 @@ Informal grammar and vague terminology in describing user interface elements.
 
 # SRS ChangeLog
 
-## Morgan
 ### Change 1
-- Removed REQ_DC008 from Table 3.73 (Design Constraints), Section 3 (Requirements)
+#### Description of change
+Removed REQ_DC008 from Table 3.73 (Design Constraints), Section 3 (Requirements)
+#### Date
+2025-06-21
+#### Author
+Morgan
+#### Reason
+Conflicts with needs of stakeholders
 
 ### Change 2
-- Added REQ_SSA0015 to Table 3.74 (Availability), Section 3 (Requirements)
-- | REQ_SSA0015        | The system shall have an offline mode which provides properties of a physical map                     | High         | Goh Chun Yong |
-### Change 3
-- Added REQ_SSA0016 to Table 3.74 (Availability), Section 3 (Requirements)
-- | REQ_SSA0016        | The system shall integrate existing university IoT infrastructure to reduce manual labour for updates | High         | Goh Chun Yong |
+#### Description of change
+Added REQ_SSA0015 to Table 3.74 (Availability), Section 3 (Requirements)
+| REQ_SSA0015        | The system shall have an offline mode which provides properties of a physical map                     | High         | Goh Chun Yong |
+#### Date
+2025-06-21
+#### Author
+Morgan
+#### Reason
+To fufill needs of stakeholders (End-users)
 
-## Nazim
+### Change 3
+#### Description of change
+Added REQ_SSA0016 to Table 3.74 (Availability), Section 3 (Requirements)
+| REQ_SSA0016        | The system shall integrate existing university IoT infrastructure to reduce manual labour for updates | High         | Goh Chun Yong |
+#### Date
+2025-06-22
+#### Author
+Morgan
+#### Reason
+To fufill needs of stakeholders (University Administration)
+
 ### Change 4
 #### Description of change  
 Changed REQ_UCA005: Rephrased “Admin able to view ongoing and upcoming events, include location of the events.” to “The administrator shall be able to view all ongoing and upcoming events along with their respective locations.”
@@ -148,4 +168,3 @@ Changed REQSQ007: Rephrased “Delete and save changes buttons for desire action
 Nazim
 #### Reason  
 To resolve vague intent and grammar issues by clearly defining UI elements and their purpose in the system.
-
